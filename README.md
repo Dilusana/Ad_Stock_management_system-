@@ -1,0 +1,1 @@
+# Ad_Stock_management_system-
