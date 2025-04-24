@@ -11,7 +11,6 @@ from employee_form import connect_database
 from product import treeview_data
 
 
-# from dashboard import tax_count
 
 
 
@@ -23,7 +22,6 @@ window.resizable(0,0)
 window.configure(bg="white")
 
 ################################---------------functionality------------------
-# ,=
 billnumber =random.randint(1000,9999)
 
 def search_product_fun(search_product__name_combo,search_product_ID_combo):
@@ -153,64 +151,6 @@ def billing_area():#have to connect with the bill button
         billing_text.insert(END, f'\nGrand Total:\t\t\t\t\t\t{grand_total}')
     
 
-
-
-
-
-
-
-
-
-
-
-##to-do 20/4/2025
-#tax amount search it and develop 
-#discount 
-# net price and after that enter the value that how the tax and discount are add 
-#print the excel sheet functin 
-#clear
-#set the window for the suitable width and height 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ##top of the heading 
 bg_image = PhotoImage(file="inventory.png")
 titleLabel = Label(window, image=bg_image, compound=LEFT, text="Inventory Management System", font=(
@@ -283,7 +223,6 @@ treeview.column('Quantity', width=80)
 treeview.column('States', width=80)
 
 #to generate the bill 
-#=,
 bill_generating_frame= Frame(window, bg  ="white")
 bill_generating_frame.place(x=350,y=120, width=500, height=540)
 
@@ -329,7 +268,6 @@ def answer():
         messagebox.showerror("Error","Division by zero is not allowed")
 
 
-# , =
 entryfeild =customtkinter.CTkEntry(calculator_frame,font=('arial',20,'bold'),text_color='white',fg_color='black',border_color='white',width=200,height=50,bg_color='black')
 entryfeild.grid(row=0,column=0,pady=10,columnspan=4,padx=7)
 
